@@ -51,10 +51,6 @@ To run the application on your system, goto Server_App and open a terminal there
 When you need to send the files via a network, goto Receiver_App and launch the file main_ser.py from terminal by running 
 'python main_rec.py'
 
-## Operating System
-
-Windows
-
 ## Technologies Used
 
 Python
@@ -65,3 +61,8 @@ Python
 - pip install python-gnupg
 - pip install pycryptodome
 - pip install pyopenssl
+
+## Operating System
+
+Windows
+
