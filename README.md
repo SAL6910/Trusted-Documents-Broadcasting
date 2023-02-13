@@ -23,7 +23,7 @@ PGP private key. Finally one can verify the PGP signatures to a document.
 
 <img src="SS/Screenshot 2.png" alt="Main">
 
-## GNUPG PATH SETUP
+## GNUPG Path Setup
 
 python-gnupg must be installed on the windows terminal. Once this is done GnuPG 1.4 Package must be installed locally into the system from the
 internet "https://www.gnupg.org/download/". The directory of the file installed must be added to the environmental path so it can be accessed 
@@ -39,26 +39,26 @@ Run the following code to set gnupghome directory.
 	>>> gpg = gnupg.GPG(homedir=homedir)
 	>>> gpg = gnupg.GPG(gnupghome=homedir)
 
-## INITAL SETUP BEFORE RUNNING DOC VERIFIER
+## Initial setup before running Doc Verifier
 
 Before running the application, please change the PGP path to your system's. Without this, the application will throw errors and not run
 Modify line in python file 'support_ser.py' to the location of your gnupghome which will be 
 gpg = gnupg.GPG(gnupghome='C:/Users/"username"/AppData/Roaming/gnupg')
 
-## TO CREATE AN APPLICATION FROM THE SOURCE FILES
+## To create an application from the source files
 
 Open the .spec files in both directories ('main_rec.spec' and 'main_ser.spec') and change the paths before /src/filename to that of the directory 
 the folder is in.
 Then open terminal in the folder 'Receiver_App' and run 'pyinstaller main_rec.spec' to create an application for the server side.
 Then open terminal in the folder 'Server_App' and run 'pyinstaller main_ser.spec' in terminal to create an application for the document verification.
 
-## SENDING FILES VIA NETWORK
+## Sending files via network
 
 This is to inform you that now the certificates for client are loaded in automatically and there is no need to use the buttons to import the 
 client certificate, client key and CA certificate. If you want to verify if handshake really occurs, you can use the buttons to import other 
 certificates which will result in a handshake fail.
 
-## RUNNING THE FILE ON TERMINAL
+## Running the file on terminal
 
 Below are the instructions to run the application using terminal - 
 To run the application on your system, goto Server_App and open a terminal there and run the python file named main.ser.py by running the command 
