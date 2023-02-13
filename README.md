@@ -8,6 +8,21 @@ network anywhere in a secure encrypted way (AES-128). The application also has a
 others to receive your files. The application is also capable of verifying the signatures to a document and sign the verified document with your 
 PGP private key. Finally one can verify the PGP signatures to a document.
 
+## Screenshots
+
+<p align="center">
+    <b>Reciever App</b>
+</p>
+
+<img src="SS/Screenshot 1.png" alt="Main">
+
+
+<p align="center">
+    <b>Server App</b>
+</p>
+
+<img src="SS/Screenshot 2.png" alt="Main">
+
 ## GNUPG PATH SETUP
 
 python-gnupg must be installed on the windows terminal. Once this is done GnuPG 1.4 Package must be installed locally into the system from the
